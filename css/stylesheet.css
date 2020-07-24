@@ -1,0 +1,227 @@
+/* html elements */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #45b29a;
+}
+
+/* containers */
+.container-fluid {
+  padding: 5% 15%;
+}
+/*horizontal line*/
+.section-hr-line {
+  border: 0.25px solid rgba(90, 90, 90, 0.3);
+}
+
+/* headings */
+.section-heading {
+  font-size: 3.5rem;
+}
+.section-subheading {
+  font-size: 2.5rem;
+  padding: 1.2rem;
+}
+.section-content {
+  text-align: left;
+}
+
+/* Sections */
+.colored {
+  background-color: rgba(203, 207, 203, 0.4);
+}
+.white {
+  background-color: white;
+}
+
+/* scroll-spy styling*/
+.portfolio-menu {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 60px 30px 60px 0px;
+  position: fixed;
+  right: 0;
+}
+.portfolio-link {
+  color: white;
+  padding: 20px;
+}
+.portfolio-link:hover {
+  color: darkgray;
+  text-decoration: none;
+}
+.navbar-inner .nav-item > .active {
+  color: white;
+  background-color: #45b29a;
+}
+
+/*Profile page section*/
+.myimage {
+  padding: 10px 0;
+  width: 100%;
+}
+.profile-tag-line {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/*Experience page section*/
+.organization-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.position {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 3px 0;
+}
+.link {
+  color: #45b29a;
+}
+.link:hover {
+  text-decoration: none;
+  color: #45b29a;
+}
+
+/*Skills page section*/
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skill-name {
+  display: inline-block;
+  width: 60%;
+}
+
+.fa-star {
+  color: rgba(230, 230, 230, 0.9);
+  padding: 0 1px;
+}
+.filled {
+  color: #45b29a;
+}
+
+/* project section */
+
+.project {
+  position: relative;
+  border: 0.25px solid rgb(203, 207, 203);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 1rem;
+}
+.link-icon {
+  position: absolute;
+  color: #fff;
+  background-color: #45b29a;
+  padding: 1rem;
+  top: 0;
+  right: 0;
+}
+.project-overlay {
+  background: rgba(69, 178, 154, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.project:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-image {
+  height: 300px;
+  width: 100%;
+}
+.project-hr-line {
+  border: 0.25px solid rgba(255, 255, 255, 0.8);
+}
+.project-details {
+  position: absolute;
+  color: #fff;
+  text-align: left;
+  padding: 0 2rem;
+  width: 100%;
+  top: 30%;
+  left: 30%;
+  opacity: 0;
+  -webkit-transform: translate(-30%, -30%);
+  -moz-transform: translate(-30%, -30%);
+  transform: translate(-30%, -30%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.project:hover .project-details {
+  top: 30%;
+  left: 30%;
+  opacity: 1;
+}
+
+.project-name {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.project-keywords {
+  font-weight: bold;
+}
+
+.fadeIn-right {
+  left: 50%;
+}
+/* contact section */
+#contact {
+  background-color: rgba(50, 50, 50, 0.9);
+}
+#contact .section-heading {
+  color: #fff;
+}
+.contact-media {
+  padding: 20px 0;
+}
+.social-links {
+  color: rgba(230, 230, 230, 0.5);
+  font-size: 1.2rem;
+}
+.social-links:hover {
+  text-decoration: none;
+  color: rgba(230, 230, 230, 0.9);
+}
+.link-text {
+  margin-left: 1rem;
+}
+.bottom-line {
+  margin-bottom: 50px;
+}
+/*Scroll-spy responsive*/
+@media (max-width: 995px) {
+  .portfolio-menu {
+    position: relative;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+  }
+}
