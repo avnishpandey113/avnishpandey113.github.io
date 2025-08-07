@@ -1,0 +1,16 @@
+{
+  "name": "avnishpandey113.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio representing my profile as a web developer. Link : https://avnishpandey113.github.io/",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
